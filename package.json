@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."
+  },
+  "engines": {
+    "node": "20.9.x || 22.x"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

@@ -40,27 +40,83 @@ function ArrowRight({ className = '' }: { className?: string }) {
 const galleryItems = [
   {
     id: 1,
-    images: ['/images/flora-1.jpg', '/images/flora-2.jpg', '/images/flora-3.jpg'],
-    title: 'Orchid',
-    subtitle: 'Pure Elegance',
-    description: 'Delicate white orchids that embody timeless sophistication. Each petal tells a story of refined beauty.',
+    images: [
+      '/images/gallery-bouquet-redt-1.jpeg',
+      '/images/gallery-bouquet-redt-2.jpeg',
+      '/images/gallery-bouquet-redt-3.jpeg',
+      '/images/gallery-bouquet-redt-4.jpeg',
+      '/images/gallery-bouquet-redt-5.jpeg',
+    ],
+    title: 'Bouquet',
+    subtitle: 'Passion in Bloom',
+    description: 'A striking red bouquet that captures the intensity of nature\'s most passionate hues. Each stem arranged with deliberate grace.',
     index: '01',
   },
   {
     id: 2,
-    images: ['/images/flora-2.jpg', '/images/flora-4.jpg', '/images/flora-1.jpg'],
-    title: 'Peony',
-    subtitle: 'Soft Romance',
-    description: 'Blush peonies arranged with eucalyptus. A whisper of romance in botanical form.',
+    images: [
+      '/images/gallery-basket-pearl-1.jpeg',
+      '/images/gallery-basket-pearl-2.jpeg',
+      '/images/gallery-basket-pearl-3.jpeg',
+    ],
+    title: 'Flower Basket',
+    subtitle: 'Pearl Elegance',
+    description: 'Delicate pearl-toned blossoms woven into a charming basket arrangement. Soft sophistication in every petal.',
     index: '02',
   },
   {
     id: 3,
-    images: ['/images/flora-3.jpg', '/images/flora-5.jpg', '/images/flora-6.jpg'],
-    title: 'Dried',
-    subtitle: 'Eternal Beauty',
-    description: 'Preserved botanicals in warm earth tones. Beauty that transcends seasons.',
+    images: [
+      '/images/gallery-special-box-1.jpeg',
+      '/images/gallery-special-box-2.jpeg',
+      '/images/gallery-special-box-3.jpeg',
+      '/images/gallery-special-box-4.jpeg',
+      '/images/gallery-special-box-5.jpeg',
+      '/images/gallery-special-box-6.jpeg',
+    ],
+    title: 'Special Box',
+    subtitle: 'Curated Treasure',
+    description: 'An artfully composed box arrangement that unveils like a hidden treasure. Beauty packaged with intention.',
     index: '03',
+  },
+  {
+    id: 4,
+    images: [
+      '/images/gallery-special-mini-1.jpeg',
+      '/images/gallery-special-mini-2.jpeg',
+      '/images/gallery-special-mini-3.jpeg',
+    ],
+    title: 'Miniature',
+    subtitle: 'Small Wonders',
+    description: 'Petite yet captivating mini arrangements that prove the best things come in small packages.',
+    index: '04',
+  },
+  {
+    id: 5,
+    images: [
+      '/images/gallery-vase-christmas-1.jpeg',
+      '/images/gallery-vase-christmas-2.jpeg',
+      '/images/gallery-vase-christmas-3.jpeg',
+      '/images/gallery-vase-christmas-4.jpeg',
+      '/images/gallery-vase-christmas-5.jpeg',
+    ],
+    title: 'Christmas',
+    subtitle: 'Festive Elegance',
+    description: 'Holiday-inspired arrangements that bring warmth and festive spirit into any space.',
+    index: '05',
+  },
+  {
+    id: 6,
+    images: [
+      '/images/gallery-vase-whitet-1.jpeg',
+      '/images/gallery-vase-whitet-2.jpeg',
+      '/images/gallery-vase-whitet-3.jpeg',
+      '/images/gallery-vase-whitet-4.jpeg',
+    ],
+    title: 'White Vase',
+    subtitle: 'Pure Serenity',
+    description: 'Clean white floral compositions that embody serenity and understated luxury.',
+    index: '06',
   },
 ]
 
@@ -455,7 +511,7 @@ function Hero() {
       >
         <div className="absolute inset-0 bg-background/60 z-10" />
         <img 
-          src="/images/flora-5.jpg" 
+          src="/images/gallery-bouquet-redt-1.jpeg" 
           alt="Crown Flora"
           className="w-full h-full object-cover"
         />
@@ -601,7 +657,7 @@ function About() {
             style={{ y: imageY }}
           >
             <motion.img 
-              src="/images/flora-4.jpg"
+              src="/images/gallery-vase-whitet-1.jpeg"
               alt="About Crown Flora"
               className="w-full h-full object-cover"
               initial={{ scale: 1.2 }}
